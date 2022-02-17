@@ -7,9 +7,9 @@ import (
 )
 
 func TestCalcSquare(t *testing.T) {
-	var sidesNumArgs = []intCustomType{0, 1, 2, 3, 4, 5,}
-	var sidesLenArgs = []float64{1, 1, 1, 1, 2, 1,}
-	var expecteds = []float64{3.141592653589793, 0, 0, 0.4330127018922193, 4, 0,}
+	var sidesNumArgs = []intCustomType{0, 1, 2, 3, 4, 5, 3, 3, }
+	var sidesLenArgs = []float64{1, 1, 1, 1, 2, 1, 4.4, 15.67}
+	var expecteds = []float64{1.5707963267948966, 0, 0, 0.4330127018922193, 4, 0, 8.383125908633367, 106.32579263566237, }
 
 	for i, sidesNum := range sidesNumArgs{
 		sideLen, expected := sidesLenArgs[i], expecteds[i]
